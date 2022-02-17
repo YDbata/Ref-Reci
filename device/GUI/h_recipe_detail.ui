@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1289</width>
+      <height>94</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 40pt &quot;MunhwajaeDolbom Bold&quot;;
+color: #F19920;
+background-color: rgba(0,0,0,00)</string>
+    </property>
+    <property name="text">
+     <string>레시피 검색 결과</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="title_back">
+    <property name="geometry">
+     <rect>
+      <x>-8</x>
+      <y>-8</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0px; background-color: rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>img/back.png</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recipe_picture">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>112</y>
+      <width>505</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(225, 225, 225)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recipe_item_name">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>112</y>
+      <width>561</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPubWorld돋움체</family>
+      <pointsize>44</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0,0,0);
+color: #45423C;</string>
+    </property>
+    <property name="text">
+     <string>레시피 이름</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recipe_item_ingre">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>192</y>
+      <width>697</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 32pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #45423C;
+background-color: rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>재료들</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recipe_item_time">
+    <property name="geometry">
+     <rect>
+      <x>1136</x>
+      <y>104</y>
+      <width>113</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPubWorld돋움체</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffffff;
+text-align: center;
+width: 120px;
+height: 40px;
+padding-top: 2px;
+background-color: #F9BC15;
+border-radius: 24px;</string>
+    </property>
+    <property name="text">
+     <string>50분</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="recipe_item_text">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>264</y>
+      <width>697</width>
+      <height>432</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #45423C;
+background-color: rgba(0,0,0,0);
+border: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'KoPubWorld돋움체 Medium'; font-size:28pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Gulim'; font-size:18pt;&quot;&gt;레시피 소개글 레시피 소개글 레시피 소개글 레시피 소개글 레시피 소개글 레시피 소개글 레시피 소개글 레시피소개글 레시피 소개글&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>title_back</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clicked_back()</slot>
+ </slots>
+</ui>

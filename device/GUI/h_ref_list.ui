@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#ffffff;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>1289</width>
+      <height>94</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 40pt &quot;MunhwajaeDolbom Bold&quot;;
+color: #F19920;
+background-color: rgba(0,0,0,00)</string>
+    </property>
+    <property name="text">
+     <string>냉장고 리스트</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="title_search">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>0</y>
+      <width>96</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border: 0px;
+border-radius: 27px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>img/search.png</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>56</width>
+      <height>56</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="title_add">
+    <property name="geometry">
+     <rect>
+      <x>1184</x>
+      <y>8</y>
+      <width>88</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 64pt &quot;KoPubWorld돋움체 Bold&quot;;
+color: #F9BC15;
+text-align: center;
+vertical-align: middle;
+background-color: rgba(255, 255, 255, 0);
+border: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="category_all">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>112</y>
+      <width>192</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #F19920;
+background-color: rgba(0,0,0,0);
+border: 2px solid #F19920;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>전체</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="category_vegi">
+    <property name="geometry">
+     <rect>
+      <x>232</x>
+      <y>112</y>
+      <width>192</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #A29D97;
+background-color: rgba(0,0,0,0);
+border: 2px solid #A29D97;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>채소류</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="category_meat">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>112</y>
+      <width>192</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #A29D97;
+background-color: rgba(0,0,0,0);
+border: 2px solid #A29D97;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>육류</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="category_fish">
+    <property name="geometry">
+     <rect>
+      <x>648</x>
+      <y>112</y>
+      <width>192</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #A29D97;
+background-color: rgba(0,0,0,0);
+border: 2px solid #A29D97;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>해물류</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="category_egg">
+    <property name="geometry">
+     <rect>
+      <x>856</x>
+      <y>112</y>
+      <width>192</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #A29D97;
+background-color: rgba(0,0,0,0);
+border: 2px solid #A29D97;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>계란·유제품</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="category_other">
+    <property name="geometry">
+     <rect>
+      <x>1064</x>
+      <y>112</y>
+      <width>192</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #A29D97;
+background-color: rgba(0,0,0,0);
+border: 2px solid #A29D97;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>기타</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ref_list_sort">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>200</y>
+      <width>172</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #FFFFFF;
+background-color: #8DB554;
+border: rgba(0,0,0,0);
+border-radius: 24px;</string>
+    </property>
+    <property name="text">
+     <string>유통기한 순</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ref_list_count">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>200</y>
+      <width>113</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorldDotum&quot;;
+color: #45423C</string>
+    </property>
+    <property name="text">
+     <string>총 0개</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="title_back">
+    <property name="geometry">
+     <rect>
+      <x>-8</x>
+      <y>-8</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0px; background-color: rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>img/back.png</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="title_recipe">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>16</y>
+      <width>134</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #F9BC15;
+background-color: rgba(0,0,0,0);
+border: 2px solid #F9BC15;
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>레시피</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>title_add</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_title_add()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1190</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1034</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>title_search</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_title_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>title_back</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>title_recipe</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_recipe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1130</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>992</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category_all</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category_vegi</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category_meat</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>584</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>614</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category_fish</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>155</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>786</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category_egg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>977</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>990</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category_other</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1188</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1267</x>
+     <y>187</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clicked_title_add()</slot>
+  <slot>clicked_title_search()</slot>
+  <slot>clicked_back()</slot>
+  <slot>clicked_recipe()</slot>
+  <slot>clicked_category()</slot>
+ </slots>
+</ui>

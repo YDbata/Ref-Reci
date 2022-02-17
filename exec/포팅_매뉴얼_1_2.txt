@@ -1,0 +1,32 @@
+1.
+웹서버
+Nginx/1.18.0 (Ubuntu)
+Node/16.6.1
+
+환경 변수 
+backend/.env 
+-> 파일 소셜 로그인을 위한 구글, 깃허브 카카오 클라이언트 ID와 클라이언트 Secret, 이메일 인증용 메일 주소와 비밀번호, DB 비밀번호, server ip주소가 들어있음
+frontend/src/server.json
+-> 프론트에서 백으로 요청을 보낼 때 서버 주소를 쓸때 사용
+
+배포 시 특이사항
+프론트: docker jenkins를 이용해서 깃랩에 코드를 푸시하면 프론트 코드를 깃에서 가져와서 빌드를 시키고, Nginx한테 빌드 파일을 제공하여 자동 배포
+백: /home/ubuntu/project/backend/ 경로에 올라가 있으며 PM2로 실행 중
+
+데이터베이스 접속 정보
+Hostname: i5a203.p.ssafy.io, Port :3306, Username: user, Password: a203!
+
+연결 관련 파일
+/backend/mysql/index.js
+connection pool을 생성하여 export후 사용
+
+
+2. 
+소셜 인증 
+구글 로그인 Google OAuth 2.0 API
+카카오 로그인 Kakao Developers REST API
+깃허브 로그인 Github Developer OAuth Apps
+팀원 이지훈의 구글, 카카오, 깃허브 계정으로 OAuth 서비스 등록을 한 상태
+소셜 로그인을 사용할 웹 사이트의 홈 주소와 callback 주소를 입력
+
+관련 파일 /backend/routes/callback/callback.js에 소셜 로그인 관련 기능이 정의되어 있음

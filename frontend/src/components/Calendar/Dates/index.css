@@ -1,0 +1,13 @@
+.fc-day-sat { color: blue;  }
+.fc-day-sun { color: red;  }
+.fc-event-time{ display: none; }
+
+
+.fc-daygrid-event-dot { 
+border: calc(
+  var(--fc-daygrid-event-dot-width, 8px) / 2) solid 
+  var(--fc-event-border-color, #F19920); }
+
+.calender { 
+  overflow: "hidden",
+}

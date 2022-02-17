@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1289</width>
+      <height>94</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 40pt &quot;MunhwajaeDolbom Bold&quot;;
+color: #F19920;
+background-color: rgba(0,0,0,00)</string>
+    </property>
+    <property name="text">
+     <string>레시피 검색 결과</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="title_back">
+    <property name="geometry">
+     <rect>
+      <x>-8</x>
+      <y>-8</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0px; background-color: rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>img/back.png</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recipe_count">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>112</y>
+      <width>113</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;KoPubWorldDotum&quot;;
+color: #45423C</string>
+    </property>
+    <property name="text">
+     <string>총 0개</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recipe_sort">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>112</y>
+      <width>172</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;KoPubWorld돋움체 Medium&quot;;
+color: #FFFFFF;
+background-color: #8DB554;
+border: rgba(0,0,0,0);
+border-radius: 24px;</string>
+    </property>
+    <property name="text">
+     <string>유통기한 순</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>title_back</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clicked_back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clicked_back()</slot>
+ </slots>
+</ui>
